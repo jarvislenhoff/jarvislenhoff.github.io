@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How Jarvis Newsletter Reader accesses, uses, processes, retains and deletes Google user data.">
+<title>Privacy Policy | Jarvis Newsletter Reader</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f8fa; color: #202833; font: 17px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 820px; margin: 48px auto; padding: 36px 40px; background: #fff; border: 1px solid #dce1e7; border-radius: 12px; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.025em; }
+h2 { margin: 30px 0 8px; font-size: 1.22rem; line-height: 1.35; }
+p { margin: 0 0 16px; }
+a { color: #18579c; text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid #18579c; outline-offset: 4px; }
+code { font-size: 0.9em; overflow-wrap: anywhere; }
+.subtitle, .meta { color: #526170; }
+.notice { border-left: 4px solid #18579c; background: #eff5fb; padding: 15px 18px; margin: 22px 0; }
+.review { border-left: 4px solid #9a5b00; background: #fff6e7; padding: 15px 18px; margin: 18px 0; }
+.notice p:last-child, .review p:last-child { margin-bottom: 0; }
+footer { border-top: 1px solid #dce1e7; margin-top: 32px; padding-top: 18px; font-size: .92rem; }
+nav { display: flex; flex-wrap: wrap; gap: 12px 22px; }
+small { font-size: .9rem; }
+ul { padding-left: 24px; }
+@media (max-width: 600px) { main { margin: 16px 12px; padding: 26px 22px; } }
+@media print { body { background: #fff; } main { margin: 0; border: 0; padding: 0; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="subtitle">Jarvis Newsletter Reader</p>
+<p class="meta">Last updated: 14 September 2026.</p>
+
+<h2>1. Application and operator</h2>
+<p>Jarvis Newsletter Reader is a private, single-user application for personal analysis of selected finance newsletters. It is operated by the owner of <a href="mailto:jarvislenhoff@gmail.com">jarvislenhoff@gmail.com</a>, which is also the support and privacy contact.</p>
+<p>The current reader runs supervised newsletter previews. Automated newsletter collection and daily podcast production are not active. Private summaries and podcasts are intended future uses, not an active automated production service.</p>
+
+<h2>2. Google data accessed</h2>
+<p>The application uses Google OAuth authorisation and requests only <code>https://www.googleapis.com/auth/gmail.readonly</code>. It accesses mailbox identity information, message metadata and selected newsletter bodies. The permission is described in Google&rsquo;s <a href="https://developers.google.com/workspace/gmail/api/auth/scopes">Gmail API scope documentation</a>.</p>
+<p><strong>This is mailbox-wide read-only permission.</strong> A configured newsletter label and an approved sender list restrict processing within the application. These are application controls, not Google-enforced isolation of particular messages or parts of the mailbox.</p>
+<p>The current preview restricts processing to nine approved senders, considers at most ten messages from the preceding 21 days, and reads at most three eligible newsletter bodies after metadata screening. It does not send, change or delete email, change labels or filters, retrieve whole threads, or open newsletter links, attachments or remote images.</p>
+
+<h2>3. Use and third-party processing</h2>
+<p>Selected newsletter information is used for the operator&rsquo;s personal reading and analysis. It can enter Jarvis&rsquo;s AI processing and normal tool/session records, including records containing newsletter content or derived outputs. This is not a local-only workflow, and processing is not necessarily temporary.</p>
+<p><strong>OpenAI:</strong> the current AI processing service is OpenAI through the operator&rsquo;s ChatGPT-connected Jarvis workflow. Selected newsletter content, related prompts and outputs can be submitted to OpenAI. Its handling is governed by the applicable service terms, <a href="https://openai.com/policies/privacy-policy/">Privacy Policy</a> and account data controls. This policy does not apply the separately tested speech API&rsquo;s terms or settings to that ChatGPT connection.</p>
+<p>The operator has turned off the account&rsquo;s main model-improvement setting and confirmed that Codex&rsquo;s <em>Include environments</em> option is off. These are current settings, not a statement about the handling of earlier previews. An opt-out does not mean that content is never processed or retained. OpenAI explains the controls and the separate treatment of voluntarily submitted feedback in its <a href="https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance">model-training guidance</a>.</p>
+<p><strong>Telegram:</strong> Jarvis is accessed through Telegram. Any newsletter excerpts or derived analysis included in messages sent through that interface are also handled by Telegram as chat content under its <a href="https://telegram.org/privacy">Privacy Policy</a>. This does not mean every newsletter body is sent to Telegram or that scheduled newsletter delivery is active.</p>
+<p><strong>Planned processing:</strong> private podcast generation, including possible speech or NotebookLM processing, is not an active automated newsletter-production workflow. Additional recipients and uses require review and any necessary consent before activation; they are not authorised merely by being mentioned here.</p>
+
+<h2>4. Storage and protection</h2>
+<p>OAuth credentials are kept in restricted-access files on the operator&rsquo;s server. Existing backups include credentials in restricted local archives and encrypted off-server copies. Application tool/session records can contain selected newsletter information and derived outputs, which can also remain in backups.</p>
+<p>Gmail content, credentials and backups are not published on this documentation website or in its public repository. This policy does not promise that all stored copies are encrypted or that every processing service has the same protection or retention arrangements.</p>
+
+<h2>5. Retention and deletion</h2>
+<p>Retention is managed manually. No fixed retention period or automatic deletion schedule is currently configured. The operator will remove newsletter-related application records and derived outputs when they are no longer needed for the disclosed functions, or following a deletion request.</p>
+<p>Deletion requests can be sent to <a href="mailto:jarvislenhoff@gmail.com">jarvislenhoff@gmail.com</a> or initiated directly by the operator. The process includes identifying and removing relevant operator-controlled application records, session records, saved outputs and backup copies. Removing a working record does not, by itself, erase copies in existing backups.</p>
+<p>Copies held by third-party processing or messaging services are addressed using their available deletion controls and procedures, subject to their applicable retention policies. Immediate erasure from every system is not promised.</p>
+<p>This is a manually managed process, not an automatic deletion mechanism. Individual deletion tasks require a review of their scope before execution. Deleting application copies does not delete the original email in Gmail: the reader has no Gmail deletion permission.</p>
+
+<h2>6. Managing and withdrawing Google access</h2>
+<p>The account holder can review the application&rsquo;s connection at the <a href="https://myaccount.google.com/connections">Google Account connections page</a>. To disconnect the reader, select its connection and use Google&rsquo;s option to remove its access. See Google&rsquo;s <a href="https://support.google.com/accounts/answer/13533235?hl=en">instructions for managing connected apps</a>.</p>
+<p>Revoking access prevents further authorised access to Google data through that connection. It does not itself erase information previously copied into application records, provider records, messages or backups. Those copies are addressed through the deletion process above.</p>
+
+<h2>7. Google API data-use commitments</h2>
+<p>The operator commits to handling and transferring information obtained through Google APIs in accordance with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> and the <a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy">Google Workspace user data and developer policy</a>, including their Limited Use requirements.</p>
+<p>Google-derived information will be used only for the disclosed personal newsletter-reading and analysis functions. The operator will not sell it, use it for advertising, or use or authorise its use to train general-purpose AI models. Transfers to processing services are limited to what is necessary to provide the disclosed functions with the account holder&rsquo;s consent. This commitment also applies to derived information, not only the original message text.</p>
+<p>These are operating commitments, not a claim that Google has verified or approved the application. They are not a retrospective assurance about earlier processing.</p>
+
+<h2>8. Documentation website</h2>
+<p>The documentation pages contain no application sign-in, tracking scripts, analytics integrations or newsletter content. The site is hosted by GitHub Pages. GitHub states that it logs visitors&rsquo; IP addresses for security purposes; see its <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">Pages data-collection notice</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">General Privacy Statement</a>.</p>
+
+<h2>9. Changes and enquiries</h2>
+<p>This policy will be updated before material changes to data use or additional data recipients are introduced. Any required consent for a new use is separate from publishing an updated policy. Support, data-management and privacy enquiries can be sent to <a href="mailto:jarvislenhoff@gmail.com">jarvislenhoff@gmail.com</a>.</p>
+
+<footer><nav aria-label="Application documentation"><a href="index.html">Home</a><a href="terms.html">Terms of Use</a></nav></footer>
+</main>
+</body>
+</html>
